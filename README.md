@@ -16,4 +16,4 @@ The `examples` folder contains several examples that can be used to familiarize 
 
 The full PAN documentation is available upon request from PAN's main author [Prof. Angelo Brambilla](mailto:angelo.brambilla@polimi.it?subject=[GitHub]%20Pan%20book).
 
-For any further question, please contact [Daniele Linaro](mailto:daniele.linaro@polimi.it?subject=[GitHub]%20PAN.jl).
+For any further question, please contact [Daniele Linaro](mailto:daniele.linaro@polimi.it?subject=[GitHub]%20pypan).
