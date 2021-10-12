@@ -1,0 +1,2 @@
+include src/pypan/data/pan.so
+graft tests

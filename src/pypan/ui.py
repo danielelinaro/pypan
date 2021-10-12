@@ -6,7 +6,7 @@ from ctypes import CDLL, RTLD_GLOBAL, POINTER, create_string_buffer, byref
 from ctypes.util import find_library
 import numpy as np
 
-PAN_LIB_PATH = os.getenv('PYPAN_SO')
+PAN_LIB_PATH = os.path.dirname(os.path.abspath(__file__)) + '/data/pan.so'
 
 __all__ = ['load_libs', 'close_libs', 'load_netlist', 'exec_cmd', 'get_var', \
            'tran', 'shooting', 'alter', 'envelope', 'DC', 'PZ']
