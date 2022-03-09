@@ -241,7 +241,7 @@ def alter(name, param, value, libs=None, **kwargs):
         libs = load_libs(PAN_LIB_PATH)
     cmd = '{} alter param="{}" value={}'.format(name, param, value)
     for k,v in kwargs.items():
-        if k in ('model',):
+        if k in ('model', 'instance'):
             cmd += ' {}="{}"'.format(k,v)
         else:
             cmd += ' {}={}'.format(k,v)

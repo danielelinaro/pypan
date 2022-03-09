@@ -1,6 +1,8 @@
 .ipynb_checkpoints
 .pan
 *.pkl
+*.raw
+*.pdf
 noisy_vanderpol.pan
 nport.pan
 vanderpol.pan
