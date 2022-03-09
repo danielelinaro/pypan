@@ -1,2 +1,3 @@
-include src/pypan/data/pan.so
+include src/pypan/data/pan.cpython-37m-x86_64-linux-gnu.so
+include src/pypan/data/pan.cpython-38-x86_64-linux-gnu.so
 graft tests
