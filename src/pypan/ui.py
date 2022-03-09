@@ -5,8 +5,11 @@ import ctypes
 from ctypes import CDLL, RTLD_GLOBAL, POINTER, create_string_buffer, byref
 from ctypes.util import find_library
 import numpy as np
+import sysconfig
 
-PAN_LIB_PATH = os.path.dirname(os.path.abspath(__file__)) + '/data/pan.so'
+PAN_LIB_PATH = os.path.dirname(os.path.abspath(__file__)) + '/data/pan' + sysconfig.get_config_var('EXT_SUFFIX')
+if not os.path.isfile(PAN_LIB_PATH):
+    raise Exception(PAN_LIB_PATH + ' does not exist')
 
 __all__ = ['load_libs', 'close_libs', 'load_netlist', 'exec_cmd', 'get_var', \
            'tran', 'shooting', 'alter', 'envelope', 'DC', 'PZ']
